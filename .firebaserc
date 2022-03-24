@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "bidmoore-staging"
+  },
+  "targets": {
+    "bidmoore-staging": {
+      "hosting": {
+        "app-bidmoore": [
+          "app-bidmoore"
+        ],
+        "bidmoore-app": [
+          "app-bidmoore-app",
+          "bidmoore-app"
+        ]
+      }
+    }
+  }
+}

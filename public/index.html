@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header class="LandingpPageHeader">
+        <div class="nav-links">
+            <div>
+                <h3 class="logo__white">
+                    Bidmo<span class="logo__span">o</span>re
+                </h3>
+            </div>
+            <nav>
+                <ul class="list-items">
+                    <li>
+                        <a href="#" class="mainLink">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mainLink">
+                            My Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="mainLink">
+                            My History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://bidmoore-staging.web.app/" class="mainLink">
+                            Log out
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <header class="walletBalance">
+        <div class="balanceInfo">
+            <h5 class="logosmall">
+                Bidmo<span class="small_logoStyle">o</span>re
+            </h5>
+            <span class="seperator">|</span>
+            <div class="credit">
+                <h5 class="logosmall">Credit <span id="coin">8,580</span></h5>
+                <div class="coin_icon">
+                    <img src="image folder/coin.svg" class="coin" />
+                </div>
+            </div>
+            <span class="seperator">|</span>
+            <h5 class="logosmall" onclick="topup()"><a href="#" class="mainLink"><u>Top up now</u></a></h5>
+        </div>
+    </header>
+    <header class="howTo">
+        <h5 class="howTo-header">HOW IT WORKS</h5>
+        <div class="steps">
+            <div class="howTo_steps">
+                <div class="howTo_background"></div>
+                <h6 class="howTo__text">
+                    Subscribe to <br />a Product
+                </h6>
+            </div>
+
+            <div class="howTo_steps">
+                <div class="howTo_background"></div>
+                <h6 class="howTo__text">
+                    Bid for <br />
+                    FREE
+                </h6>
+            </div>
+            <div class="howTo_steps">
+                <div class="howTo_background"></div>
+                <h6 class="howTo__text">
+                    Win Bid and <br />
+                    Get Reward
+                </h6>
+            </div>
+        </div>
+    </header>
+    <section class="AuctionSection" id="liveAuctions">
+    </section>
+    <section class="AuctionSection" id="upcomingAuctions">
+    </section>
+</body>
+
+</html>
